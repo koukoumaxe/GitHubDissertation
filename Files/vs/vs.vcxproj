@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{39AC4D82-0171-36A8-9F1F-6539B0932E0E}</ProjectGuid>
+    <RootNamespace>vs</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>vs</PrimaryOutput>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>vs</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>vs</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>vs</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">vs</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">vs</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">vs</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">vs</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\opencv\build\include\opencv2;D:\opencv\build\include\opencv;D:\opencv\build\include;D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release;D:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest;(1);..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtPrintSupport;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtWidgets;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtGui;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtCore;release;.;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\mkspecs\win32-msvc2010;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;gdi32.lib;user32.lib;$(QTDIR)\lib\qtmain.lib;$(QTDIR)\lib\Qt5Core.lib;opencv_core249.lib;opencv_highgui249.lib;opencv_imgproc249.lib;$(QTDIR)\lib\Qt5PrintSupport.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;opencv_stitching2411.lib;opencv_contrib2411.lib;opencv_videostab2411.lib;opencv_superres2411.lib;opencv_nonfree2411.lib;opencv_gpu2411.lib;opencv_ocl2411.lib;opencv_legacy2411.lib;opencv_ts2411.lib;opencv_calib3d2411.lib;opencv_features2d2411.lib;opencv_objdetect2411.lib;opencv_highgui2411.lib;opencv_video2411.lib;opencv_photo2411.lib;opencv_imgproc2411.lib;opencv_flann2411.lib;opencv_ml2411.lib;opencv_core2411.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\opencv\build\x86\vc11\lib;D:\opencv\build\x64\vc11\lib;$(QTDIR)\lib;D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release\lib\;D:\Qt\Qt5.3.2\5.3\msvc2010_opengl\bin;D:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\vs.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release;D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release;D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release;D:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest;D:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest;D:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest;D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release;(1);..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtPrintSupport;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtWidgets;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtGui;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtCore;release;.;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\mkspecs\win32-msvc2010;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;gdi32.lib;user32.lib;$(QTDIR)\lib\qtmain.lib;$(QTDIR)\lib\Qt5Core.lib;opencv_core249.lib;opencv_highgui249.lib;(1)/lib/;opencv_imgproc249.lib;$(QTDIR)\lib\Qt5PrintSupport.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(QTDIR)\lib;$(QTDIR)\lib;"D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release\lib\";"D:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest\lib\";"D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release";%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\vs.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\opencv\build\include\opencv2;D:\opencv\build\include\opencv;D:\opencv\build\include;D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release;D:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest;(1);..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtPrintSupport;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtWidgets;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtGui;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtCore;debug;.;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\mkspecs\win32-msvc2010;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;gdi32.lib;user32.lib;$(QTDIR)\lib\qtmaind.lib;$(QTDIR)\lib\Qt5Cored.lib;opencv_core249d.lib;opencv_highgui249d.lib;opencv_imgproc249d.lib;$(QTDIR)\lib\Qt5PrintSupportd.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;opencv_stitching2411d.lib;opencv_contrib2411d.lib;opencv_videostab2411d.lib;opencv_superres2411d.lib;opencv_nonfree2411d.lib;opencv_gpu2411d.lib;opencv_ocl2411d.lib;opencv_legacy2411d.lib;opencv_ts2411d.lib;opencv_calib3d2411d.lib;opencv_features2d2411d.lib;opencv_objdetect2411d.lib;opencv_highgui2411d.lib;opencv_video2411d.lib;opencv_photo2411d.lib;opencv_imgproc2411d.lib;opencv_flann2411d.lib;opencv_ml2411d.lib;opencv_core2411d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.3.2\5.3\msvc2010_opengl\bin;D:\opencv\build\x86\vc11\lib;D:\opencv\build\x64\vc11\lib;$(QTDIR)\lib;D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release\lib\;D:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest\lib\;D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\vs.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release;D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release;D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release;D:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest;D:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest;D:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest;D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release;(1);..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtPrintSupport;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtWidgets;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtGui;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtCore;debug;.;..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\mkspecs\win32-msvc2010;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;gdi32.lib;user32.lib;$(QTDIR)\lib\qtmaind.lib;$(QTDIR)\lib\Qt5Cored.lib;opencv_core249d.lib;opencv_highgui249d.lib;(1)/lib/;opencv_imgproc249d.lib;$(QTDIR)\lib\Qt5PrintSupportd.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(QTDIR)\lib;$(QTDIR)\lib;"D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release\lib\";"D:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest\lib\";"D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release";%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\vs.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="controlthread.cpp" />
+    <ClCompile Include="Debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_qcustomplot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="qcustomplot.cpp" />
+    <ClCompile Include="Release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_qcustomplot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="threadd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="controlthread.h" />
+    <CustomBuild Include="mainwindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release" "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest" "-I.\(1)\." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtPrintSupport" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtWidgets" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtGui" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtCore" "-I.\release" "-I." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release" "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest" "-I.\(1)\." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtPrintSupport" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtWidgets" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtGui" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtCore" "-I.\release" "-I." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing mainwindow.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Moc%27ing mainwindow.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release" "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest" "-I.\(1)\." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtPrintSupport" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtWidgets" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtGui" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtCore" "-I.\debug" "-I." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release" "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest" "-I.\(1)\." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtPrintSupport" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtWidgets" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtGui" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtCore" "-I.\debug" "-I." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing mainwindow.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Moc%27ing mainwindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="qcustomplot.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release" "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest" "-I.\(1)\." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtPrintSupport" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtWidgets" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtGui" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtCore" "-I.\release" "-I." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release" "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest" "-I.\(1)\." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtPrintSupport" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtWidgets" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtGui" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtCore" "-I.\release" "-I." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing qcustomplot.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Moc%27ing qcustomplot.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release" "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest" "-I.\(1)\." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtPrintSupport" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtWidgets" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtGui" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtCore" "-I.\debug" "-I." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release" "-ID:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest" "-I.\(1)\." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtPrintSupport" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtWidgets" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtGui" "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtCore" "-I.\debug" "-I." "-I.\..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing qcustomplot.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Moc%27ing qcustomplot.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="GeneratedFiles\ui_mainwindow.h" />
+    <ClInclude Include="threadd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" Qt5Version_x0020_Win32="msvc2010_opengl" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

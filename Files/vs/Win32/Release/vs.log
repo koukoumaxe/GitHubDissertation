@@ -1,0 +1,75 @@
+﻿Build started 06/08/2015 10:57:32.
+     1>Project "D:\Visual Studio 2012\Projects\RAW project\vs\vs.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\opencv\build\include\opencv2 /ID:\opencv\build\include\opencv /ID:\opencv\build\include /I"D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release" /I"D:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest" /I"(1)" /I..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include /I..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtPrintSupport /I..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtWidgets /I..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtGui /I..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\include\QtCore /Irelease /I. /I"..\..\..\..\qt\qt5.3.2\5.3\msvc2010_opengl\mkspecs\win32-msvc2010" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /O2 /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_NO_DEBUG /D QT_PRINTSUPPORT_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D NDEBUG /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Release\\" /Fd"Win32\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt threadd.cpp -Zm200 -w34100 -w34189 
+         threadd.cpp
+     1>threadd.cpp(203): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(250): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(367): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(374): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(383): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(639): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(645): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(654): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(874): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(946): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1014): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1036): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>threadd.cpp(1103): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>threadd.cpp(1173): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1287): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1298): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1309): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1314): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1318): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1322): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1337): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1393): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1444): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1449): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1453): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1457): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1493): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1502): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1512): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1523): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1550): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1583): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1611): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1636): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1708): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1715): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1727): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1734): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1745): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1753): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1761): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1767): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1879): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1905): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1918): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1987): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1995): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(1997): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(2009): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(2011): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(2023): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(2025): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(2037): warning C4018: '<' : signed/unsigned mismatch
+     1>threadd.cpp(2039): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"release\\vs.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:D:\opencv\build\x86\vc11\lib /LIBPATH:D:\opencv\build\x64\vc11\lib /LIBPATH:D:\Qt\Qt5.3.2\5.3\msvc2010_opengl\lib /LIBPATH:"D:\Visual Studio 2012\Projects\RAW project\vs\..\build-vs-Desktop_Qt_5_3_0_MSVC2010_OpenGL_32bit-Release\lib\\" /LIBPATH:D:\Qt\Qt5.3.2\5.3\msvc2010_opengl\bin /LIBPATH:"D:\Visual Studio 2012\Projects\RAW project\vs\..\GapTest\lib\\" glu32.lib opengl32.lib gdi32.lib user32.lib D:\Qt\Qt5.3.2\5.3\msvc2010_opengl\lib\qtmain.lib D:\Qt\Qt5.3.2\5.3\msvc2010_opengl\lib\Qt5Core.lib opencv_core249.lib opencv_highgui249.lib opencv_imgproc249.lib D:\Qt\Qt5.3.2\5.3\msvc2010_opengl\lib\Qt5PrintSupport.lib D:\Qt\Qt5.3.2\5.3\msvc2010_opengl\lib\Qt5Widgets.lib D:\Qt\Qt5.3.2\5.3\msvc2010_opengl\lib\Qt5Gui.lib opencv_stitching2411.lib opencv_contrib2411.lib opencv_videostab2411.lib opencv_superres2411.lib opencv_nonfree2411.lib opencv_gpu2411.lib opencv_ocl2411.lib opencv_legacy2411.lib opencv_ts2411.lib opencv_calib3d2411.lib opencv_features2d2411.lib opencv_objdetect2411.lib opencv_highgui2411.lib opencv_video2411.lib opencv_photo2411.lib opencv_imgproc2411.lib opencv_flann2411.lib opencv_ml2411.lib opencv_core2411.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Win32\Release\vs.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Visual Studio 2012\Projects\RAW project\vs\release\vs.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 Win32\Release\controlthread.obj
+         Win32\Release\main.obj
+         Win32\Release\mainwindow.obj
+         Win32\Release\qcustomplot.obj
+         Win32\Release\moc_mainwindow.obj
+         Win32\Release\moc_qcustomplot.obj
+         Win32\Release\threadd.obj "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" 
+         vs.vcxproj -> D:\Visual Studio 2012\Projects\RAW project\vs\release\vs.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"release\\vs.exe;#1" /manifest Win32\Release\vs.exe.intermediate.manifest
+     1>Done Building Project "D:\Visual Studio 2012\Projects\RAW project\vs\vs.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.69
